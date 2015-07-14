@@ -5,21 +5,21 @@
 /* global MockConnector, MockImportedContacts, MockCurtain, MockLazyLoader */
 /* global MockConfirmDialog */
 
-require('/shared/js/text_normalizer.js');
-require('/shared/js/contacts/search.js');
+require('/shared/text_normalizer/text_normalizer.js');
+require('/shared/contacts/search/contacts/search.js');
 requireApp('communications/contacts/test/unit/mock_l10n.js');
-require('/shared/js/contacts/import/importer_ui.js');
-require('/shared/js/contacts/import/utilities/misc.js');
-require('/shared/js/contacts/utilities/dom.js');
-require('/shared/js/contacts/utilities/templates.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/test/unit/mocks/mock_confirm_dialog.js');
+require('/shared/contacts/import/importer_ui/contacts/import/importer_ui.js');
+require('/shared/contacts/import/utilities/misc/contacts/import/utilities/misc.js');
+require('/shared/contacts/utilities/dom/contacts/utilities/dom.js');
+require('/shared/contacts/utilities/templates/contacts/utilities/templates.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_confirm_dialog.js');
 
 requireApp('communications/contacts/test/unit/import/mock_import.html.js');
 requireApp('communications/contacts/test/unit/mock_asyncstorage.js');
 requireApp('communications/contacts/test/unit/mock_search.js');
 requireApp('communications/contacts/test/unit/mock_oauthflow.js');
-require('/shared/js/contacts/import/friends_list.js');
+require('/shared/contacts/import/friends_list/contacts/import/friends_list.js');
 requireApp('communications/contacts/test/unit/mock_contacts_shortcuts.js');
 requireApp('communications/contacts/test/unit/mock_utils.js');
 requireApp('communications/facebook/test/unit/mock_curtain.js');

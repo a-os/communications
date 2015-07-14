@@ -2,7 +2,7 @@
 /* global MockContactsIndexHtml */
 /* global navigationStack */
 
-require('/shared/js/lazy_loader.js');
+require('/shared/lazy_loader/lazy_loader.js');
 requireApp('communications/contacts/test/unit/mock_contacts_index.html.js');
 requireApp('communications/contacts/js/navigation.js');
 

@@ -15,8 +15,8 @@
 /* global MockVCFReader */
 /* global MockMozContacts */
 
-require('/shared/js/lazy_loader.js');
-require('/shared/test/unit/mocks/mock_navigator_moz_mobile_connections.js');
+require('/shared/lazy_loader/lazy_loader.js');
+require('/shared/unit_test_mocks/mock_navigator_moz_mobile_connections.js');
 
 requireApp('communications/contacts/services/contacts.js');
 requireApp('communications/contacts/test/unit/mock_contacts_index.html.js');
@@ -33,8 +33,8 @@ requireApp('communications/contacts/test/unit/mock_vcard_parser.js');
 requireApp('communications/contacts/test/unit/mock_event_listeners.js');
 requireApp('communications/contacts/test/unit/mock_sim_importer.js');
 
-require('/shared/test/unit/mocks/mock_confirm_dialog.js');
-require('/shared/test/unit/mocks/mock_mozContacts.js');
+require('/shared/unit_test_mocks/mock_confirm_dialog.js');
+require('/shared/unit_test_mocks/mock_mozContacts.js');
 
 requireApp('communications/contacts/js/views/settings.js');
 requireApp('communications/contacts/js/utilities/icc_handler.js');
@@ -110,7 +110,7 @@ suite('Import contacts >', function() {
     document.body.innerHTML = MockContactsIndexHtml;
     contacts.Settings.init();
 
-    LazyLoader.load('/shared/js/contacts/import/utilities/status.js', done);
+    LazyLoader.load('/shared/contacts/import/utilities/status/contacts/import/utilities/status.js', done);
   });
 
   suiteTeardown(function() {

@@ -13,11 +13,11 @@
 
 var MergeHelper = (function() {
   var DEPENDENCIES = [
-    '/shared/js/contacts/contacts_merger.js',
-    '/shared/js/contacts/utilities/image_thumbnail.js',
-    '/shared/js/contacts/utilities/ice_store.js',
+    '/shared/contacts/contacts_merger/contacts/contacts_merger.js',
+    '/shared/contacts/utilities/image_thumbnail/contacts/utilities/image_thumbnail.js',
+    '/shared/contacts/utilities/ice_store/contacts/utilities/ice_store.js',
     '/contacts/js/utilities/ice_data.js',
-    '/shared/js/async_storage.js'
+    '/shared/async_storage/async_storage.js'
   ];
 
   var eventHandler;

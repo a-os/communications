@@ -37,11 +37,11 @@ Contacts.MultipleSelect = (function() {
         importedContacts = 0,
         parsedContacts = 0;
     const DEPENDENCIES = [
-      '/shared/js/contacts/import/utilities/status.js',
-      '/shared/js/simple_phone_matcher.js',
-      '/shared/js/contacts/contacts_matcher.js',
-      '/shared/js/contacts/contacts_merger.js',
-      '/shared/js/contacts/merger_adapter.js'
+      '/shared/contacts/import/utilities/status/contacts/import/utilities/status.js',
+      '/shared/simple_phone_matcher/simple_phone_matcher.js',
+      '/shared/contacts/contacts_matcher/contacts/contacts_matcher.js',
+      '/shared/contacts/contacts_merger/contacts/contacts_merger.js',
+      '/shared/contacts/merger_adapter/contacts/merger_adapter.js'
     ];
     LazyLoader.load(DEPENDENCIES, function() {
       contactsToImport.forEach((contact, index) => {

@@ -1,11 +1,11 @@
 /* globals MockFbQuery, MockOauthflow*/
 'use strict';
 
-require('/shared/js/contacts/import/facebook/fb_contact_utils.js');
-require('/shared/js/fb/fb_reader_utils.js');
-require('/shared/js/contacts/import/utilities/misc.js');
-require('/shared/js/contacts/import/facebook/fb_contact.js');
-require('/shared/js/contacts/import/facebook/facebook_connector.js');
+require('/shared/contacts/import/facebook/fb_contact_utils/contacts/import/facebook/fb_contact_utils.js');
+require('/shared/fb/fb_reader_utils/fb/fb_reader_utils.js');
+require('/shared/contacts/import/utilities/misc/contacts/import/utilities/misc.js');
+require('/shared/contacts/import/facebook/fb_contact/contacts/import/facebook/fb_contact.js');
+require('/shared/contacts/import/facebook/facebook_connector/contacts/import/facebook/facebook_connector.js');
 requireApp('communications/facebook/test/unit/mock_fb_graph_data.js');
 requireApp('communications/facebook/test/unit/mock_fb_query.js');
 requireApp('communications/contacts/test/unit/mock_oauthflow.js');

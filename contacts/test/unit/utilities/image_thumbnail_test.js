@@ -2,8 +2,8 @@
 
 /* global utils, MockLazyLoader */
 
-require('/shared/js/contacts/utilities/image_thumbnail.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
+require('/shared/contacts/utilities/image_thumbnail/contacts/utilities/image_thumbnail.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
 
 suite('Contacts/utilities/thumbnailImage >', function() {
   var imageData = {

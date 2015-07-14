@@ -2,9 +2,9 @@
 
 /* global MockImportStatusData, fb */
 
-require('/shared/js/contacts/import/facebook/fb_contact_utils.js');
-require('/shared/js/contacts/import/facebook/fb_utils.js');
-require('/shared/js/fb/fb_request.js');
+require('/shared/contacts/import/facebook/fb_contact_utils/contacts/import/facebook/fb_contact_utils.js');
+require('/shared/contacts/import/facebook/fb_utils/contacts/import/facebook/fb_utils.js');
+require('/shared/fb/fb_request/fb/fb_request.js');
 requireApp('communications/contacts/test/unit/mock_import_status_data.js');
 
 suite('Fb Utils Tests', function() {

@@ -3,11 +3,11 @@
 /* globals MockDatastoreObj, MockNavigatorDatastore, MockMozContactsObj */
 /* globals MultiContact */
 
-require('/shared/js/lazy_loader.js');
-require('/shared/js/simple_phone_matcher.js');
-require('/shared/js/contacts/multi_contact.js');
-require('/shared/test/unit/mocks/mock_navigator_datastore.js');
-require('/shared/test/unit/mocks/mock_mozContacts.js');
+require('/shared/lazy_loader/lazy_loader.js');
+require('/shared/simple_phone_matcher/simple_phone_matcher.js');
+require('/shared/contacts/multi_contact/contacts/multi_contact.js');
+require('/shared/unit_test_mocks/mock_navigator_datastore.js');
+require('/shared/unit_test_mocks/mock_mozContacts.js');
 
 suite('Getting MultiContact Data', function() {
 

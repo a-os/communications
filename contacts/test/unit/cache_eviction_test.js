@@ -20,9 +20,9 @@ requireApp('communications/contacts/test/unit/mock_event_listeners.js');
 requireApp('communications/contacts/test/unit/mock_asyncstorage.js');
 requireApp('communications/contacts/services/contacts.js');
 requireApp('communications/contacts/js/utilities/ice_data.js');
-require('/shared/test/unit/mocks/mock_ice_store.js');
-require('/shared/test/unit/mocks/mock_mozContacts.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_ice_store.js');
+require('/shared/unit_test_mocks/mock_mozContacts.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
 
 var mocksForCacheEviction = new MocksHelper([
   'ActivityHandler',

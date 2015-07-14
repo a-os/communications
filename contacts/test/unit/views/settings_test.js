@@ -15,12 +15,12 @@
 /* global MockSdCard */
 /* global utils */
 
-require('/shared/js/lazy_loader.js');
-require('/shared/js/contacts/import/utilities/misc.js');
-require('/shared/js/contacts/utilities/event_listeners.js');
-require('/shared/test/unit/mocks/mock_navigator_moz_settings.js');
-require('/shared/test/unit/mocks/mock_navigator_moz_mobile_connections.js');
-require('/shared/test/unit/mocks/mock_iccmanager.js');
+require('/shared/lazy_loader/lazy_loader.js');
+require('/shared/contacts/import/utilities/misc/contacts/import/utilities/misc.js');
+require('/shared/contacts/utilities/event_listeners/contacts/utilities/event_listeners.js');
+require('/shared/unit_test_mocks/mock_navigator_moz_settings.js');
+require('/shared/unit_test_mocks/mock_navigator_moz_mobile_connections.js');
+require('/shared/unit_test_mocks/mock_iccmanager.js');
 requireApp('communications/contacts/services/contacts.js');
 requireApp('communications/contacts/test/unit/mock_service_extensions.js');
 requireApp('communications/contacts/test/unit/mock_cache.js');
@@ -33,8 +33,8 @@ requireApp('communications/contacts/test/unit/mock_cookie.js');
 requireApp('communications/contacts/test/unit/mock_get_device_storage.js');
 requireApp('communications/contacts/test/unit/mock_sdcard.js');
 requireApp('communications/contacts/test/unit/mock_icc_helper.js');
-require('/shared/test/unit/mocks/mock_confirm_dialog.js');
-require('/shared/test/unit/mocks/mock_mozContacts.js');
+require('/shared/unit_test_mocks/mock_confirm_dialog.js');
+require('/shared/unit_test_mocks/mock_mozContacts.js');
 requireApp('communications/contacts/test/unit/mock_l10n.js');
 requireApp('communications/contacts/js/utilities/icc_handler.js');
 requireApp('communications/contacts/js/utilities/sim_dom_generator.js');
@@ -446,8 +446,8 @@ suite('Contacts settings >', function() {
       navigator.mozSettings = MockNavigatorSettings;
       navigator.mozSettings.mSettings['locale.hour12'] = true;
 
-      require('/shared/js/l10n_date.js');
-      require('/shared/js/date_time_helper.js', done);
+      require('/shared/l10n_date/l10n_date.js');
+      require('/shared/date_time_helper/date_time_helper.js', done);
 
     });
 

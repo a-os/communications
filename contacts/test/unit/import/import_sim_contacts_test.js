@@ -2,17 +2,17 @@
 /* global SimContactsImporter */
 /* global MockMozContacts, MocksHelper, MockIccManager */
 
-require('/shared/test/unit/mocks/mock_mozContacts.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/test/unit/mocks/mock_iccmanager.js');
-require('/shared/js/text_normalizer.js');
-require('/shared/js/simple_phone_matcher.js');
-require('/shared/js/contacts/contacts_merger.js');
-require('/shared/js/contacts/utilities/image_thumbnail.js');
-require('/shared/js/contacts/merger_adapter.js');
-require('/shared/js/contacts/import/utilities/misc.js');
-require('/shared/js/contacts/import/utilities/import_sim_contacts.js');
-require('/shared/test/unit/mocks/mock_moz_contact.js');
+require('/shared/unit_test_mocks/mock_mozContacts.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_iccmanager.js');
+require('/shared/text_normalizer/text_normalizer.js');
+require('/shared/simple_phone_matcher/simple_phone_matcher.js');
+require('/shared/contacts/contacts_merger/contacts/contacts_merger.js');
+require('/shared/contacts/utilities/image_thumbnail/contacts/utilities/image_thumbnail.js');
+require('/shared/contacts/merger_adapter/contacts/merger_adapter.js');
+require('/shared/contacts/import/utilities/misc/contacts/import/utilities/misc.js');
+require('/shared/contacts/import/utilities/import_sim_contacts/contacts/import/utilities/import_sim_contacts.js');
+require('/shared/unit_test_mocks/mock_moz_contact.js');
 
 var mocksHelperForImporter = new MocksHelper([
   'LazyLoader',
@@ -42,7 +42,7 @@ suite('Sim import >', function() {
   suiteSetup(function(done) {
     realMozContacts = navigator.mozContacts;
     navigator.mozContacts = MockMozContacts;
-    require('/shared/js/contacts/contacts_matcher.js', done);
+    require('/shared/contacts/contacts_matcher/contacts/contacts_matcher.js', done);
   });
 
   setup(function() {

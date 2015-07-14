@@ -8,31 +8,31 @@
 
 'use strict';
 
-require('/shared/js/dialer/dtmf_tone.js');
-require('/shared/js/dialer/keypad.js');
+require('/shared/dialer/dtmf_tone/dialer/dtmf_tone.js');
+require('/shared/dialer/keypad/dialer/keypad.js');
 
 require('/contacts/test/unit/mock_confirm_dialog.js');
 require('/dialer/test/unit/mock_call_handler.js');
 require('/dialer/test/unit/mock_call_log_db_manager.js');
-require('/shared/test/unit/mocks/mock_iccmanager.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/test/unit/mocks/mock_multi_sim_action_button.js');
-require('/shared/test/unit/mocks/mock_navigator_moz_settings.js');
-require('/shared/test/unit/mocks/mock_navigator_moz_telephony.js');
-require('/shared/test/unit/mocks/mock_settings_listener.js');
-require('/shared/test/unit/mocks/mock_sim_settings_helper.js');
-require('/shared/test/unit/mocks/dialer/mock_handled_call.js');
-require('/shared/test/unit/mocks/dialer/mock_call.js');
-require('/shared/test/unit/mocks/dialer/mock_calls_handler.js');
-require('/shared/test/unit/mocks/dialer/mock_lazy_l10n.js');
-require('/shared/test/unit/mocks/dialer/mock_utils.js');
-require('/shared/test/unit/mocks/dialer/mock_tone_player.js');
-require('/shared/test/unit/mocks/mock_custom_dialog.js');
-require('/shared/test/unit/mocks/mock_moz_activity.js');
-require('/shared/test/unit/mocks/dialer/mock_font_size_manager.js');
+require('/shared/unit_test_mocks/mock_iccmanager.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_multi_sim_action_button.js');
+require('/shared/unit_test_mocks/mock_navigator_moz_settings.js');
+require('/shared/unit_test_mocks/mock_navigator_moz_telephony.js');
+require('/shared/unit_test_mocks/mock_settings_listener.js');
+require('/shared/unit_test_mocks/mock_sim_settings_helper.js');
+require('/shared/unit_test_mocks/dialer/mock_handled_call.js');
+require('/shared/unit_test_mocks/dialer/mock_call.js');
+require('/shared/unit_test_mocks/dialer/mock_calls_handler.js');
+require('/shared/unit_test_mocks/dialer/mock_lazy_l10n.js');
+require('/shared/unit_test_mocks/dialer/mock_utils.js');
+require('/shared/unit_test_mocks/dialer/mock_tone_player.js');
+require('/shared/unit_test_mocks/mock_custom_dialog.js');
+require('/shared/unit_test_mocks/mock_moz_activity.js');
+require('/shared/unit_test_mocks/dialer/mock_font_size_manager.js');
 require('/dialer/test/unit/mock_dialer_index.html.js');
 require(
-  '/shared/test/unit/mocks/elements/gaia_sim_picker/mock_gaia_sim_picker.js');
+  '/shared/unit_test_mocks/elements/gaia_sim_picker/mock_gaia_sim_picker.js');
 
 var mocksHelperForKeypad = new MocksHelper([
   'LazyL10n',

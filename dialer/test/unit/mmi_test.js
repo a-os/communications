@@ -9,16 +9,16 @@
 require('/dialer/js/mmi.js');
 require('/dialer/test/unit/mock_mmi_ui.js');
 
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/test/unit/mocks/mock_mobile_operator.js');
-require('/shared/test/unit/mocks/mock_navigator_moz_apps.js');
-require('/shared/test/unit/mocks/mock_navigator_moz_icc_manager.js');
-require('/shared/test/unit/mocks/mock_navigator_moz_mobile_connections.js');
-require('/shared/test/unit/mocks/mock_navigator_moz_telephony.js');
-require('/shared/test/unit/mocks/mock_notification.js');
-require('/shared/test/unit/mocks/mock_notification_helper.js');
-require('/shared/test/unit/mocks/mock_lazy_l10n.js');
-require('/shared/test/unit/mocks/mock_l10n.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_mobile_operator.js');
+require('/shared/unit_test_mocks/mock_navigator_moz_apps.js');
+require('/shared/unit_test_mocks/mock_navigator_moz_icc_manager.js');
+require('/shared/unit_test_mocks/mock_navigator_moz_mobile_connections.js');
+require('/shared/unit_test_mocks/mock_navigator_moz_telephony.js');
+require('/shared/unit_test_mocks/mock_notification.js');
+require('/shared/unit_test_mocks/mock_notification_helper.js');
+require('/shared/unit_test_mocks/mock_lazy_l10n.js');
+require('/shared/unit_test_mocks/mock_l10n.js');
 
 const SUCCESS_MMI_NO_MSG = 'sucess_mmi_no_msg';
 const FAILED_MMI_NO_MSG = 'failed_mmi_no_msg';

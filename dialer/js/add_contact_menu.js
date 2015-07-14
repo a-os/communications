@@ -49,8 +49,8 @@ var AddContactMenu = (function() {
         header: phoneNumber
       };
 
-      LazyLoader.load(['/shared/js/option_menu.js',
-                       '/shared/style/action_menu.css'], function() {
+      LazyLoader.load(['/shared/option_menu/option_menu.js',
+                       '/shared/action_menu/action_menu.css'], function() {
         /* jshint nonew: false */
         new OptionMenu(params).show();
       });

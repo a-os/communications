@@ -996,9 +996,9 @@ contacts.Form = (function() {
   };
 
   var doMatch = function doMatch(contact, callbacks) {
-    LazyLoader.load(['/shared/js/text_normalizer.js',
-                     '/shared/js/simple_phone_matcher.js',
-                     '/shared/js/contacts/contacts_matcher.js'], function() {
+    LazyLoader.load(['/shared/text_normalizer/text_normalizer.js',
+                     '/shared/simple_phone_matcher/simple_phone_matcher.js',
+                     '/shared/contacts/contacts_matcher/contacts/contacts_matcher.js'], function() {
       Matcher.match(contact, 'active', callbacks);
     });
   };

@@ -5,20 +5,20 @@
           MocksHelper, MockSimSettingsHelper, Notification,
           CallGroupMenu, Utils, MockMozContacts */
 
-require('/shared/js/dialer/utils.js');
+require('/shared/dialer/utils/dialer/utils.js');
 
-require('/shared/test/unit/mocks/dialer/mock_contacts.js');
-require('/shared/test/unit/mocks/dialer/mock_keypad.js');
-require('/shared/test/unit/mocks/mock_async_storage.js');
-require('/shared/test/unit/mocks/mock_accessibility_helper.js');
-require('/shared/test/unit/mocks/mock_image.js');
-require('/shared/test/unit/mocks/mock_l10n.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/test/unit/mocks/mock_mozContacts.js');
-require('/shared/test/unit/mocks/mock_navigator_moz_icc_manager.js');
-require('/shared/test/unit/mocks/mock_notification.js');
-require('/shared/test/unit/mocks/mock_sim_settings_helper.js');
-require('/shared/test/unit/mocks/mock_sticky_header.js');
+require('/shared/unit_test_mocks/dialer/mock_contacts.js');
+require('/shared/unit_test_mocks/dialer/mock_keypad.js');
+require('/shared/unit_test_mocks/mock_async_storage.js');
+require('/shared/unit_test_mocks/mock_accessibility_helper.js');
+require('/shared/unit_test_mocks/mock_image.js');
+require('/shared/unit_test_mocks/mock_l10n.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_mozContacts.js');
+require('/shared/unit_test_mocks/mock_navigator_moz_icc_manager.js');
+require('/shared/unit_test_mocks/mock_notification.js');
+require('/shared/unit_test_mocks/mock_sim_settings_helper.js');
+require('/shared/unit_test_mocks/mock_sticky_header.js');
 
 require('/dialer/test/unit/mock_call_group_menu.js');
 require('/dialer/test/unit/mock_call_handler.js');

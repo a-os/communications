@@ -2,8 +2,8 @@
 
 'use strict';
 
-require('/shared/test/unit/mocks/mock_l10n.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_l10n.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
 
 var mocksHelperForActivities = new MocksHelper([
   'LazyLoader'
@@ -32,7 +32,7 @@ suite('> System Banner Utilities', function() {
     loadHTML();
     // calling it here to be able to reload the HTML on setup, as status.js
     // assigns the #statusMsg on load
-    require('/shared/js/contacts/import/utilities/status.js', function () {
+    require('/shared/contacts/import/utilities/status/contacts/import/utilities/status.js', function () {
       subject = utils.status;
       statusDOM = document.querySelector('#statusMsg');
       done();

@@ -22,14 +22,14 @@ var CallLog = {
     this._initialized = true;
 
     var lazyFiles = [
-      '/shared/style/confirm.css',
-      '/shared/style/switches.css',
-      '/shared/style/lists.css',
-      '/shared/js/confirm.js',
-      '/shared/js/dialer/utils.js',
-      '/shared/js/sticky_header.js',
-      '/shared/js/sim_settings_helper.js',
-      '/shared/js/date_time_helper.js'
+      '/shared/confirm/confirm.css',
+      '/shared/switches/switches.css',
+      '/shared/lists/lists.css',
+      '/shared/confirm/confirm.js',
+      '/shared/dialer/utils/dialer/utils.js',
+      '/shared/sticky_header/sticky_header.js',
+      '/shared/sim_settings_helper/sim_settings_helper.js',
+      '/shared/date_time_helper/date_time_helper.js'
     ];
     var self = this;
 

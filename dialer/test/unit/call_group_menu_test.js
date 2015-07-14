@@ -3,9 +3,9 @@
 /* globals MocksHelper, CallInfo, CallGroupMenu, OptionMenu */
 
 require('/dialer/test/unit/mock_call_info.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/test/unit/mocks/mock_moz_activity.js');
-require('/shared/test/unit/mocks/mock_option_menu.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_moz_activity.js');
+require('/shared/unit_test_mocks/mock_option_menu.js');
 
 require('/dialer/js/call_group_menu.js');
 

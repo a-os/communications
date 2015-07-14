@@ -6,9 +6,9 @@ var fb = window.fb || {};
 
 fb.resolver = function(item, loader) {
   var FB_SCRIPTS_NEEDED = [
-    '/shared/js/fb/fb_request.js',
-    '/shared/js/fb/fb_data_reader.js',
-    '/shared/js/fb/fb_reader_utils.js'
+    '/shared/fb/fb_request/fb/fb_request.js',
+    '/shared/fb/fb_data_reader/fb/fb_data_reader.js',
+    '/shared/fb/fb_reader_utils/fb/fb_reader_utils.js'
   ];
 
   var status = item.dataset.status;

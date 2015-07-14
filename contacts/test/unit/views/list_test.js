@@ -18,14 +18,14 @@
 /* global ICEStore */
 /* global LazyLoader */
 
-require('/shared/js/lazy_loader.js');
-require('/shared/js/text_normalizer.js');
-require('/shared/js/tag_visibility_monitor.js');
-require('/shared/js/contacts/utilities/dom.js');
-require('/shared/js/contacts/utilities/templates.js');
-require('/shared/js/contacts/utilities/event_listeners.js');
-require('/shared/test/unit/mocks/mock_contact_all_fields.js');
-require('/shared/js/contacts/utilities/ice_store.js');
+require('/shared/lazy_loader/lazy_loader.js');
+require('/shared/text_normalizer/text_normalizer.js');
+require('/shared/tag_visibility_monitor/tag_visibility_monitor.js');
+require('/shared/contacts/utilities/dom/contacts/utilities/dom.js');
+require('/shared/contacts/utilities/templates/contacts/utilities/templates.js');
+require('/shared/contacts/utilities/event_listeners/contacts/utilities/event_listeners.js');
+require('/shared/unit_test_mocks/mock_contact_all_fields.js');
+require('/shared/contacts/utilities/ice_store/contacts/utilities/ice_store.js');
 requireApp('communications/contacts/services/contacts.js');
 requireApp('communications/contacts/js/views/list.js');
 requireApp('communications/contacts/test/unit/mock_cookie.js');
@@ -39,10 +39,10 @@ requireApp('communications/contacts/test/unit/mock_extfb.js');
 requireApp('communications/contacts/test/unit/mock_cache.js');
 requireApp('communications/contacts/test/unit/mock_activities.js');
 requireApp('communications/contacts/test/unit/mock_utils.js');
-require('/shared/test/unit/mocks/mock_mozContacts.js');
+require('/shared/unit_test_mocks/mock_mozContacts.js');
 requireApp('communications/contacts/js/utilities/performance_helper.js');
 
-require('/shared/test/unit/mocks/mock_contact_photo_helper.js');
+require('/shared/unit_test_mocks/mock_contact_photo_helper.js');
 
 // We're going to swap those with mock objects
 // so we need to make sure they are defined.

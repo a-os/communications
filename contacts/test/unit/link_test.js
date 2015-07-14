@@ -9,11 +9,11 @@
 /* global MockOauthflow */
 /* global MockCurtain */
 
-require('/shared/js/text_normalizer.js');
-require('/shared/js/binary_search.js');
-require('/shared/js/contacts/import/utilities/misc.js');
-require('/shared/js/contacts/utilities/dom.js');
-require('/shared/js/contacts/utilities/templates.js');
+require('/shared/text_normalizer/text_normalizer.js');
+require('/shared/binary_search/binary_search.js');
+require('/shared/contacts/import/utilities/misc/contacts/import/utilities/misc.js');
+require('/shared/contacts/utilities/dom/contacts/utilities/dom.js');
+require('/shared/contacts/utilities/templates/contacts/utilities/templates.js');
 
 requireApp('communications/contacts/test/unit/mock_link.html.js');
 requireApp('communications/contacts/test/unit/mock_l10n.js');

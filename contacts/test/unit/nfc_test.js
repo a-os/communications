@@ -3,16 +3,16 @@
 /* global MockMozNfc, contacts, MocksHelper, fb,
           MockMozNDEFRecord, mozContact, NfcUtils */
 
-require('/shared/test/unit/mocks/mock_moz_ndefrecord.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/test/unit/mocks/mock_moz_nfc.js');
-require('/shared/js/contact2vcard.js');
-require('/shared/js/setImmediate.js');
-require('/shared/js/nfc_utils.js');
+require('/shared/unit_test_mocks/mock_moz_ndefrecord.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_moz_nfc.js');
+require('/shared/contact2vcard/contact2vcard.js');
+require('/shared/setImmediate/setImmediate.js');
+require('/shared/nfc_utils/nfc_utils.js');
 requireApp('communications/contacts/test/unit/mock_fb.js');
 requireApp('communications/contacts/test/unit/mock_l10n.js');
 requireApp('communications/contacts/test/unit/mock_navigation.js');
-require('/shared/test/unit/mocks/mock_moz_contact.js');
+require('/shared/unit_test_mocks/mock_moz_contact.js');
 
 if (!window.contacts) {
   window.contacts = null;

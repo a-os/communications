@@ -36,8 +36,8 @@ var CallLogDBManager = {
       return;
     }
 
-    LazyLoader.load(['/shared/js/dialer/utils.js',
-                     '/shared/js/dialer/contacts.js'], (function() {
+    LazyLoader.load(['/shared/dialer/utils/dialer/utils.js',
+                     '/shared/dialer/contacts/dialer/contacts.js'], (function() {
       try {
         var indexedDB = window.indexedDB || window.webkitIndexedDB ||
                         window.mozIndexedDB || window.msIndexedDB;

@@ -118,7 +118,7 @@
       return;
     }
 
-    LazyLoader.load(['/shared/js/simple_phone_matcher.js'], function() {
+    LazyLoader.load(['/shared/simple_phone_matcher/simple_phone_matcher.js'], function() {
       ContactsButtons.renderPhones(contact);
 
       // Highlight the contact number that the call info page was opened for,
@@ -272,15 +272,15 @@
       callInfoView = document.getElementById('call-info-view');
       var self = this;
       LazyLoader.load([callInfoView,
-                       '/shared/js/dialer/contacts.js',
-                       '/shared/js/dialer/utils.js',
-                       '/shared/js/contacts/contacts_buttons.js',
-                       '/shared/js/contacts/utilities/templates.js',
-                       '/shared/js/contacts/sms_integration.js',
-                       '/shared/js/text_normalizer.js',
+                       '/shared/dialer/contacts/dialer/contacts.js',
+                       '/shared/dialer/utils/dialer/utils.js',
+                       '/shared/contacts/contacts_buttons/contacts/contacts_buttons.js',
+                       '/shared/contacts/utilities/templates/contacts/utilities/templates.js',
+                       '/shared/contacts/sms_integration/contacts/sms_integration.js',
+                       '/shared/text_normalizer/text_normalizer.js',
                        '/dialer/js/telephony_helper.js',
-                       '/shared/style/contacts/contacts_buttons.css',
-                       '/shared/style/contacts.css',
+                       '/shared/contacts/contacts_buttons/contacts/contacts_buttons.css',
+                       '/shared/contacts/contacts.css',
                        '/dialer/style/buttons.css'], function() {
         if (!self._initialised) {
           self._initialised = true;

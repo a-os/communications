@@ -79,7 +79,7 @@ if (!contacts.MatchingUI) {
     }
 
     var listDependencies = [
-      '/shared/js/contacts/utilities/image_loader.js'
+      '/shared/contacts/utilities/image_loader/contacts/utilities/image_loader.js'
     ];
 
     function templateDuplicateContact(contact) {

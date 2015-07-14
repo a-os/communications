@@ -3,10 +3,10 @@
 /* global MockFbContactsObj */
 /* global MockMozContactsObj */
 
-require('/shared/js/fb/fb_reader_utils.js');
-require('/shared/js/fb/fb_request.js');
-require('/shared/test/unit/mocks/mock_fb_data_reader.js');
-require('/shared/test/unit/mocks/mock_mozContacts.js');
+require('/shared/fb/fb_reader_utils/fb/fb_reader_utils.js');
+require('/shared/fb/fb_request/fb/fb_request.js');
+require('/shared/unit_test_mocks/mock_fb_data_reader.js');
+require('/shared/unit_test_mocks/mock_mozContacts.js');
 
 var realFbContacts, realMozContacts;
 

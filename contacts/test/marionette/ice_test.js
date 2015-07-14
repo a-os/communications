@@ -106,9 +106,9 @@ marionette('Contacts > ICE contacts', function() {
       var LazyLoader = window.wrappedJSObject.LazyLoader;
 
       LazyLoader.load([
-        '/shared/js/contacts/utilities/ice_store.js',
+        '/shared/contacts/utilities/ice_store/contacts/utilities/ice_store.js',
         '/contacts/js/utilities/ice_data.js',
-        '/shared/js/async_storage.js'
+        '/shared/async_storage/async_storage.js'
       ], function() {
           var ICEData = window.wrappedJSObject.ICEData;
           ICEData.setICEContacts(iceContactsList).then(function() {

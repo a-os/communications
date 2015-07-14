@@ -1,9 +1,9 @@
 /* global MockMozVoicemail, MockNavigatorSettings, Voicemail */
 'use strict';
 
-require('/shared/js/dialer/voicemail.js');
+require('/shared/dialer/voicemail/dialer/voicemail.js');
 require('/dialer/test/unit/mock_mozVoicemail.js');
-require('/shared/test/unit/mocks/mock_navigator_moz_settings.js');
+require('/shared/unit_test_mocks/mock_navigator_moz_settings.js');
 
 suite('dialer/voicemail', function() {
   var realMozVoicemail;

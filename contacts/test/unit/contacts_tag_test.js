@@ -2,7 +2,7 @@
 /* global MockSelectionDom */
 /* global triggerEvent */
 
-require('/shared/js/contacts/utilities/dom.js');
+require('/shared/contacts/utilities/dom/contacts/utilities/dom.js');
 
 requireApp('communications/contacts/test/unit/helper.js');
 requireApp('communications/contacts/test/unit/mock_selection_dom.js.html');

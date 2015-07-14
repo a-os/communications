@@ -4,7 +4,7 @@
 
 'use strict';
 
-require('/shared/js/contacts/import/gmail/gmail_connector.js');
+require('/shared/contacts/import/gmail/gmail_connector/contacts/import/gmail/gmail_connector.js');
 requireApp('communications/contacts/test/unit/import/gmail/mock_contact1.js');
 requireApp('communications/contacts/test/unit/import/gmail/mock_listing.js');
 requireApp('communications/contacts/test/unit/import/mock_rest.js');

@@ -4,17 +4,17 @@
 
 'use strict';
 
-require('/shared/test/unit/mocks/mock_navigator_moz_icc_manager.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_navigator_moz_icc_manager.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
 require('/dialer/test/unit/mock_call_handler.js');
 // FIXME : This should be a mock
-require('/shared/js/simple_phone_matcher.js');
-require('/shared/test/unit/mocks/mock_fb_data_reader.js');
-require('/shared/test/unit/mocks/dialer/mock_contacts.js');
-require('/shared/test/unit/mocks/dialer/mock_keypad.js');
-require('/shared/test/unit/mocks/mock_sim_settings_helper.js');
-require('/shared/test/unit/mocks/mock_l10n.js');
-require('/shared/js/sanitizer.js');
+require('/shared/simple_phone_matcher/simple_phone_matcher.js');
+require('/shared/unit_test_mocks/mock_fb_data_reader.js');
+require('/shared/unit_test_mocks/dialer/mock_contacts.js');
+require('/shared/unit_test_mocks/dialer/mock_keypad.js');
+require('/shared/unit_test_mocks/mock_sim_settings_helper.js');
+require('/shared/unit_test_mocks/mock_l10n.js');
+require('/shared/sanitizer/sanitizer.js');
 
 require('/dialer/js/suggestion_bar.js');
 
@@ -116,10 +116,10 @@ suite('suggestion Bar', function() {
 
     MockNavigatorMozIccManager.addIcc(0, {});
 
-    loadBodyHTML('/shared/elements/contacts/contact_in_overlay.html');
+    loadBodyHTML('/shared/contacts/contact_in_overlay.html');
     var suggestionItemTemplate = document.body.querySelector('template');
 
-    loadBodyHTML('/shared/elements/contacts/contact_list_overlay.html');
+    loadBodyHTML('/shared/contacts/contact_list_overlay.html');
     var suggestionOverlayTemplate = document.body.querySelector('template');
 
     domSuggestionBar = document.createElement('section');

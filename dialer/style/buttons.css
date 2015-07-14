@@ -1,6 +1,6 @@
 /**
  * FIXME/bug 1060293: This is entirely copied and pasted from
- * shared/style/buttons.css because the selectors in there are overly broad and
+ * shared/buttons/buttons.css because the selectors in there are overly broad and
  * had to be made more specific. We should remove this file and use that one
  * instead.
  */

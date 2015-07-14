@@ -18,7 +18,7 @@ requireApp('communications/contacts/test/unit/mock_navigation.js');
 requireApp('communications/contacts/test/unit/mock_main_navigation.js');
 requireApp('communications/contacts/js/utilities/tagSelector.js');
 requireApp('communications/contacts/js/tag_options.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
 
 var mocksHelper = new MocksHelper([
 	'LazyLoader'

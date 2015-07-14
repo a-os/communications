@@ -8,32 +8,32 @@
    MockSettingsListener, CustomElementsHelper  */
 
 require(
-  '/shared/test/unit/mocks/mock_navigator_moz_set_message_handler.js'
+  '/shared/unit_test_mocks/mock_navigator_moz_set_message_handler.js'
 );
-require('/shared/test/unit/mocks/mock_l10n.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/test/unit/mocks/mock_navigator_wake_lock.js');
-require('/shared/test/unit/mocks/mock_voicemail.js');
+require('/shared/unit_test_mocks/mock_l10n.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_navigator_wake_lock.js');
+require('/shared/unit_test_mocks/mock_voicemail.js');
 require('/dialer/test/unit/mock_call_log.js');
 require('/dialer/test/unit/mock_call_log_db_manager.js');
 require('/dialer/test/unit/mock_mmi_manager.js');
 require('/dialer/test/unit/mock_suggestion_bar.js');
 
-require('/shared/test/unit/mocks/mock_accessibility_helper.js');
-require('/shared/test/unit/mocks/mock_navigator_moz_apps.js');
-require('/shared/test/unit/mocks/mock_navigator_moz_icc_manager.js');
-require('/shared/test/unit/mocks/mock_notification.js');
-require('/shared/test/unit/mocks/mock_notification_helper.js');
-require('/shared/test/unit/mocks/mock_settings_listener.js');
-require('/shared/test/unit/mocks/mock_sim_settings_helper.js');
-require('/shared/test/unit/mocks/dialer/mock_contacts.js');
-require('/shared/test/unit/mocks/dialer/mock_keypad.js');
-require('/shared/test/unit/mocks/dialer/mock_telephony_helper.js');
-require('/shared/test/unit/mocks/dialer/mock_tone_player.js');
-require('/shared/test/unit/mocks/dialer/mock_utils.js');
-require('/shared/test/unit/mocks/mock_moz_activity.js');
+require('/shared/unit_test_mocks/mock_accessibility_helper.js');
+require('/shared/unit_test_mocks/mock_navigator_moz_apps.js');
+require('/shared/unit_test_mocks/mock_navigator_moz_icc_manager.js');
+require('/shared/unit_test_mocks/mock_notification.js');
+require('/shared/unit_test_mocks/mock_notification_helper.js');
+require('/shared/unit_test_mocks/mock_settings_listener.js');
+require('/shared/unit_test_mocks/mock_sim_settings_helper.js');
+require('/shared/unit_test_mocks/dialer/mock_contacts.js');
+require('/shared/unit_test_mocks/dialer/mock_keypad.js');
+require('/shared/unit_test_mocks/dialer/mock_telephony_helper.js');
+require('/shared/unit_test_mocks/dialer/mock_tone_player.js');
+require('/shared/unit_test_mocks/dialer/mock_utils.js');
+require('/shared/unit_test_mocks/mock_moz_activity.js');
 require(
-  '/shared/test/unit/mocks/elements/gaia_sim_picker/mock_gaia_sim_picker.js');
+  '/shared/unit_test_mocks/elements/gaia_sim_picker/mock_gaia_sim_picker.js');
 
 require('/dialer/js/dialer.js');
 
@@ -856,7 +856,7 @@ suite('navigation bar', function() {
           window.removeEventListener('hashchange', handleHashChange);
 
           assert.isTrue(loadSpy.getCall(0).args[0].indexOf(
-            '/shared/js/accessibility_helper.js') !== -1);
+            '/shared/accessibility_helper/accessibility_helper.js') !== -1);
           sinon.assert.callOrder(
             loadSpy, AccessibilityHelper.setAriaSelected);
 

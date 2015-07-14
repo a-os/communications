@@ -3,9 +3,9 @@
 /* global MocksHelper, MockAudioContext, MockNavigatorMozTelephony, TonePlayer
  */
 
-require('/shared/js/dialer/tone_player.js');
-require('/shared/test/unit/mocks/mock_audio.js');
-require('/shared/test/unit/mocks/mock_navigator_moz_telephony.js');
+require('/shared/dialer/tone_player/dialer/tone_player.js');
+require('/shared/unit_test_mocks/mock_audio.js');
+require('/shared/unit_test_mocks/mock_navigator_moz_telephony.js');
 
 var mocksForTonePlayer = new MocksHelper([
   'AudioContext'

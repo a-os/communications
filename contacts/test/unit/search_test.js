@@ -3,12 +3,12 @@
 
 requireApp('communications/contacts/test/unit/mock_search.html.js');
 requireApp('communications/contacts/test/unit/mock_search_source.js');
-require('/shared/js/text_normalizer.js');
-require('/shared/js/contacts/utilities/event_listeners.js');
-require('/shared/js/contacts/utilities/image_loader.js');
-require('/shared/js/lazy_loader.js');
-require('/shared/js/contacts/utilities/dom.js');
-require('/shared/js/utilities.js');
+require('/shared/text_normalizer/text_normalizer.js');
+require('/shared/contacts/utilities/event_listeners/contacts/utilities/event_listeners.js');
+require('/shared/contacts/utilities/image_loader/contacts/utilities/image_loader.js');
+require('/shared/lazy_loader/lazy_loader.js');
+require('/shared/contacts/utilities/dom/contacts/utilities/dom.js');
+require('/shared/utilities/utilities.js');
 requireApp('communications/contacts/test/unit/mock_navigation.js');
 requireApp('communications/contacts/test/unit/mock_main_navigation.js');
 
@@ -18,7 +18,7 @@ new MocksHelper([
   'MainNavigation'
 ]).init();
 
-require('/shared/js/contacts/search.js');
+require('/shared/contacts/search/contacts/search.js');
 
 suite('Search mode', function() {
   var searchBox, searchList, noResults;

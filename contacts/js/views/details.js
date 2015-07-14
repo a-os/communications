@@ -661,9 +661,9 @@ contacts.Details = (function() {
 
   var shareContact = function cd_shareContact() {
     const VCARD_DEPS = [
-      '/shared/js/text_normalizer.js',
-      '/shared/js/contact2vcard.js',
-      '/shared/js/setImmediate.js'
+      '/shared/text_normalizer/text_normalizer.js',
+      '/shared/contact2vcard/contact2vcard.js',
+      '/shared/setImmediate/setImmediate.js'
     ];
 
     LazyLoader.load(VCARD_DEPS,function vcardLoaded() {

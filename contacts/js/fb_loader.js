@@ -31,17 +31,17 @@ var fbLoader = (function() {
     document.body.appendChild(iframesFragment);
 
     var scripts = [
-      '/shared/js/contacts/import/utilities/misc.js',
-      '/shared/js/contacts/import/import_status_data.js',
+      '/shared/contacts/import/utilities/misc/contacts/import/utilities/misc.js',
+      '/shared/contacts/import/import_status_data/contacts/import/import_status_data.js',
       '/contacts/js/service_extensions.js',
       '/shared/pages/import/js/parameters.js',
-      '/shared/js/fb/fb_request.js',
-      '/shared/js/contacts/import/facebook/fb_data.js',
-      '/shared/js/contacts/import/facebook/fb_utils.js',
-      '/shared/js/contacts/import/facebook/fb_query.js',
-      '/shared/js/fb/fb_reader_utils.js',
-      '/shared/js/contacts/import/facebook/fb_contact_utils.js',
-      '/shared/js/contacts/import/facebook/fb_contact.js',
+      '/shared/fb/fb_request/fb/fb_request.js',
+      '/shared/contacts/import/facebook/fb_data/contacts/import/facebook/fb_data.js',
+      '/shared/contacts/import/facebook/fb_utils/contacts/import/facebook/fb_utils.js',
+      '/shared/contacts/import/facebook/fb_query/contacts/import/facebook/fb_query.js',
+      '/shared/fb/fb_reader_utils/fb/fb_reader_utils.js',
+      '/shared/contacts/import/facebook/fb_contact_utils/contacts/import/facebook/fb_contact_utils.js',
+      '/shared/contacts/import/facebook/fb_contact/contacts/import/facebook/fb_contact.js',
       '/contacts/js/fb/fb_link.js',
       '/contacts/js/fb/fb_messaging.js'
     ];

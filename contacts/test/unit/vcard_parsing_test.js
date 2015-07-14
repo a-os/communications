@@ -5,18 +5,18 @@ MockAdaptAndMerge, MockThumbnailImage, utils */
 
 'use strict';
 
-require('/shared/js/mime_mapper.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/test/unit/mocks/mock_moz_contact.js');
+require('/shared/mime_mapper/mime_mapper.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_moz_contact.js');
 requireApp('communications/contacts/test/unit/mock_image_thumbnail.js');
-require('/shared/js/contacts/import/utilities/vcard_parser.js');
+require('/shared/contacts/import/utilities/vcard_parser/contacts/import/utilities/vcard_parser.js');
 
 requireApp('communications/contacts/test/unit/mock_contacts_match.js');
 requireApp('communications/contacts/test/unit/' +
  'mock_contacts_adapt_and_merge.js');
-require('/shared/test/unit/mocks/mock_mozContacts.js');
+require('/shared/unit_test_mocks/mock_mozContacts.js');
 requireApp('communications/contacts/test/unit/mock_utils.js');
-requireApp('/shared/test/unit/mocks/mock_moz_contact.js');
+requireApp('/shared/unit_test_mocks/mock_moz_contact.js');
 requireApp('communications/contacts/test/unit/import/mock_rest.js');
 requireApp('communications/contacts/test/unit/base64_photo.js');
 

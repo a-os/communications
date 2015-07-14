@@ -3,11 +3,11 @@
 'use strict';
 
 requireApp('communications/dialer/js/call_log_db.js');
-require('/shared/js/dialer/utils.js');
+require('/shared/dialer/utils/dialer/utils.js');
 
-require('/shared/test/unit/mocks/dialer/mock_contacts.js');
-require('/shared/test/unit/mocks/mock_contact_photo_helper.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/dialer/mock_contacts.js');
+require('/shared/unit_test_mocks/mock_contact_photo_helper.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
 
 var mocksHelperForCallLogDB = new MocksHelper([
   'LazyLoader',

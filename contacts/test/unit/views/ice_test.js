@@ -5,8 +5,8 @@
 
 'use strict';
 
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/js/contacts/utilities/ice_store.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/contacts/utilities/ice_store/contacts/utilities/ice_store.js');
 requireApp('communications/contacts/test/unit/mock_navigation.js');
 requireApp('communications/contacts/test/unit/mock_contacts.js');
 requireApp('communications/contacts/test/unit/mock_utils.js');

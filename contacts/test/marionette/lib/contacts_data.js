@@ -24,7 +24,7 @@ ContactsData.prototype = {
       var Contacts = window.wrappedJSObject.Contacts;
 
       var DEPS = [
-        '/shared/js/contacts/utilities/image_square.js'
+        '/shared/contacts/utilities/image_square/contacts/utilities/image_square.js'
       ];
       Contacts.loadFacebook(function() {
         LazyLoader.load(DEPS, function() {

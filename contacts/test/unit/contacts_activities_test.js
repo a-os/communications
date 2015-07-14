@@ -4,12 +4,12 @@
 
 'use strict';
 
-require('/shared/test/unit/mocks/mock_contact_all_fields.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/js/contacts/import/utilities/misc.js');
-require('/shared/js/contact2vcard.js');
-require('/shared/js/text_normalizer.js');
-require('/shared/js/setImmediate.js');
+require('/shared/unit_test_mocks/mock_contact_all_fields.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/contacts/import/utilities/misc/contacts/import/utilities/misc.js');
+require('/shared/contact2vcard/contact2vcard.js');
+require('/shared/text_normalizer/text_normalizer.js');
+require('/shared/setImmediate/setImmediate.js');
 
 requireApp('communications/contacts/js/activities.js');
 requireApp('communications/contacts/test/unit/mock_l10n.js');
@@ -17,8 +17,8 @@ requireApp('communications/contacts/test/unit/mock_navigation.js');
 requireApp('communications/contacts/test/unit/mock_main_navigation.js');
 requireApp('communications/contacts/test/unit/mock_contacts.js');
 requireApp('communications/contacts/test/unit/mock_action_menu.js');
-require('/shared/test/unit/mocks/mock_confirm_dialog.js');
-require('/shared/test/unit/mocks/mock_moz_contact.js');
+require('/shared/unit_test_mocks/mock_confirm_dialog.js');
+require('/shared/unit_test_mocks/mock_moz_contact.js');
 
 if (!window._) {
   window._ = null;

@@ -22,7 +22,7 @@ var Migrator = (function(){
 
   function migrateFbToken() {
     LazyLoader.load([
-      '/shared/js/contacts/import/import_status_data.js',
+      '/shared/contacts/import/import_status_data/contacts/import/import_status_data.js',
     ], function() {
       var STORAGE_KEY = fb.utils.TOKEN_DATA_KEY;
 

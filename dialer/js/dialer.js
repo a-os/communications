@@ -27,13 +27,13 @@ var NavbarManager = {
       return;
     }
     var self = this;
-    LazyLoader.load(['/shared/js/accessibility_helper.js',
-                     '/shared/js/async_storage.js',
-                     '/shared/js/notification_helper.js',
-                     '/shared/js/simple_phone_matcher.js',
-                     '/shared/js/contact_photo_helper.js',
-                     '/shared/js/dialer/contacts.js',
-                     '/shared/js/dialer/voicemail.js',
+    LazyLoader.load(['/shared/accessibility_helper/accessibility_helper.js',
+                     '/shared/async_storage/async_storage.js',
+                     '/shared/notification_helper/notification_helper.js',
+                     '/shared/simple_phone_matcher/simple_phone_matcher.js',
+                     '/shared/contact_photo_helper/contact_photo_helper.js',
+                     '/shared/dialer/contacts/dialer/contacts.js',
+                     '/shared/dialer/voicemail/dialer/voicemail.js',
                      '/dialer/js/call_log.js',
                      '/dialer/style/call_log.css'], function rs_loaded() {
                     self.resourcesLoaded = true;
@@ -219,7 +219,7 @@ var CallHandler = (function callHandler() {
 
   /* === Telephony Call Ended Support === */
   function sendNotification(number, serviceId) {
-    LazyLoader.load('/shared/js/dialer/utils.js', function() {
+    LazyLoader.load('/shared/dialer/utils/dialer/utils.js', function() {
       Contacts.findByNumber(number, function lookup(contact, matchingTel) {
         var title;
         if (navigator.mozIccManager.iccIds.length > 1) {
@@ -376,12 +376,12 @@ var CallHandler = (function callHandler() {
     // Dialing a specific number
     if (isAtd && command[3] !== '>') {
       var phoneNumber = command.substring(3);
-      LazyLoader.load(['/shared/js/sim_settings_helper.js'], function() {
+      LazyLoader.load(['/shared/sim_settings_helper/sim_settings_helper.js'], function() {
         SimSettingsHelper.getCardIndexFrom('outgoingCall',
         function(defaultCardIndex) {
           if (defaultCardIndex === SimSettingsHelper.ALWAYS_ASK_OPTION_VALUE) {
-            LazyLoader.load(['/shared/js/component_utils.js',
-                             '/shared/elements/gaia_sim_picker/script.js'],
+            LazyLoader.load(['/shared/component_utils/component_utils.js',
+                             '/shared/gaia_sim_picker/script.js'],
             function() {
               var simPicker = document.getElementById('sim-picker');
               simPicker.getOrPick(defaultCardIndex, phoneNumber, function(ci) {
@@ -408,7 +408,7 @@ var CallHandler = (function callHandler() {
       position, 'lastEntryDate', true, 'dialing',
     function(result) {
       if (result && (typeof result === 'object') && result.number) {
-        LazyLoader.load(['/shared/js/sim_settings_helper.js'], function() {
+        LazyLoader.load(['/shared/sim_settings_helper/sim_settings_helper.js'], function() {
           SimSettingsHelper.getCardIndexFrom('outgoingCall', function(ci) {
             // If the default outgoing call SIM is set to "Always ask", or is
             // unset, we place this call on the SIM that was used the last time
@@ -502,10 +502,10 @@ var CallHandler = (function callHandler() {
   }
 
   function init() {
-    LazyLoader.load(['/shared/js/mobile_operator.js',
+    LazyLoader.load(['/shared/mobile_operator/mobile_operator.js',
                      '/dialer/js/mmi.js',
                      '/dialer/js/mmi_ui.js',
-                     '/shared/style/progress_activity.css',
+                     '/shared/progress_activity/progress_activity.css',
                      '/dialer/style/mmi.css'], function() {
 
       if (window.navigator.mozSetMessageHandler) {
@@ -520,7 +520,7 @@ var CallHandler = (function callHandler() {
         window.navigator.mozSetMessageHandler('ussd-received', onUssdReceived);
       }
     });
-    LazyLoader.load('/shared/js/settings_listener.js', function() {
+    LazyLoader.load('/shared/settings_listener/settings_listener.js', function() {
       SettingsListener.observe('lockscreen.locked', null, function(value) {
         if (value) {
           screenState = 'locked';

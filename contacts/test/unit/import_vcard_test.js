@@ -1,19 +1,19 @@
 'use strict';
 /* global MocksHelper, MockMozL10n, utils, MockMatcher, MockMozContacts */
 
-require('/shared/js/contacts/import/utilities/import_from_vcard.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/test/unit/mocks/mock_moz_contact.js');
-require('/shared/test/unit/mocks/mock_mozContacts.js');
+require('/shared/contacts/import/utilities/import_from_vcard/contacts/import/utilities/import_from_vcard.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_moz_contact.js');
+require('/shared/unit_test_mocks/mock_mozContacts.js');
 
 requireApp('communications/contacts/test/unit/mock_contacts_match.js');
 requireApp('communications/contacts/test/unit/mock_l10n.js');
 requireApp('communications/contacts/test/unit/mock_vcard_reader.js');
 requireApp('communications/contacts/test/unit/mock_file_reader.js');
-require('/shared/test/unit/mocks/mock_confirm_dialog.js');
+require('/shared/unit_test_mocks/mock_confirm_dialog.js');
 requireApp('communications/contacts/test/unit/mock_navigation.js');
 requireApp('communications/contacts/test/unit/mock_contacts.js');
-requireApp('/shared/test/unit/mocks/mock_moz_contact.js');
+requireApp('/shared/unit_test_mocks/mock_moz_contact.js');
 
 if (!window._) {
   window._ = null;

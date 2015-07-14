@@ -5,17 +5,17 @@
 
 'use strict';
 
-require('/shared/js/contacts/contacts_buttons.js');
+require('/shared/contacts/contacts_buttons/contacts/contacts_buttons.js');
 
-require('/shared/js/text_normalizer.js');
-require('/shared/js/contacts/utilities/dom.js');
-require('/shared/js/contacts/utilities/templates.js');
+require('/shared/text_normalizer/text_normalizer.js');
+require('/shared/contacts/utilities/dom/contacts/utilities/dom.js');
+require('/shared/contacts/utilities/templates/contacts/utilities/templates.js');
 
-require('/shared/test/unit/mocks/mock_multi_sim_action_button.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/test/unit/mocks/mock_l10n.js');
-require('/shared/test/unit/mocks/mock_contact_all_fields.js');
-require('/shared/test/unit/mocks/dialer/mock_telephony_helper.js');
+require('/shared/unit_test_mocks/mock_multi_sim_action_button.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_l10n.js');
+require('/shared/unit_test_mocks/mock_contact_all_fields.js');
+require('/shared/unit_test_mocks/dialer/mock_telephony_helper.js');
 require('/contacts/test/unit/mock_navigation.js');
 require('/contacts/test/unit/mock_contacts.js');
 require('/contacts/test/unit/mock_contacts_buttons_dom.js.html');
@@ -240,7 +240,7 @@ suite('Render contact', function() {
       subject.renderPhones(mockContact);
 
       sinon.assert.neverCalledWith(LazyLoader.load,
-       ['/shared/js/multi_sim_action_button.js']);
+       ['/shared/multi_sim_action_button/multi_sim_action_button.js']);
       ActivityHandler.currentlyHandling = false;
     });
 
@@ -251,7 +251,7 @@ suite('Render contact', function() {
       subject.renderPhones(mockContact);
 
       sinon.assert.neverCalledWith(LazyLoader.load,
-       ['/shared/js/multi_sim_action_button.js']);
+       ['/shared/multi_sim_action_button/multi_sim_action_button.js']);
     });
 
     test('> Load call button', function() {
@@ -264,7 +264,7 @@ suite('Render contact', function() {
       assert.equal(LazyLoader.load.callCount, 2);
       var spyCall = LazyLoader.load.getCall(1);
       assert.deepEqual(
-        ['/shared/js/multi_sim_action_button.js'], spyCall.args[0]);
+        ['/shared/multi_sim_action_button/multi_sim_action_button.js'], spyCall.args[0]);
     });
 
     test('> Multiple MultiSimActionButtons initialized with correct values',

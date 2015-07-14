@@ -15,14 +15,14 @@
 /* global utils */
 /* exported _ */
 
-require('/shared/test/unit/mocks/mock_contact_all_fields.js');
-require('/shared/js/text_normalizer.js');
-require('/shared/js/lazy_loader.js');
-require('/shared/js/contacts/import/utilities/misc.js');
-require('/shared/js/contacts/utilities/dom.js');
-require('/shared/js/contacts/utilities/templates.js');
-require('/shared/js/contacts/utilities/event_listeners.js');
-require('/shared/test/unit/mocks/mock_moz_nfc.js');
+require('/shared/unit_test_mocks/mock_contact_all_fields.js');
+require('/shared/text_normalizer/text_normalizer.js');
+require('/shared/lazy_loader/lazy_loader.js');
+require('/shared/contacts/import/utilities/misc/contacts/import/utilities/misc.js');
+require('/shared/contacts/utilities/dom/contacts/utilities/dom.js');
+require('/shared/contacts/utilities/templates/contacts/utilities/templates.js');
+require('/shared/contacts/utilities/event_listeners/contacts/utilities/event_listeners.js');
+require('/shared/unit_test_mocks/mock_moz_nfc.js');
 //Avoiding lint checking the DOM file renaming it to .html
 requireApp('communications/contacts/test/unit/mock_form_dom.js.html');
 requireApp('communications/contacts/js/contacts_tag.js');
@@ -31,14 +31,14 @@ requireApp('communications/contacts/js/utilities/mozContact.js');
 requireApp('communications/contacts/test/unit/mock_navigation.js');
 requireApp('communications/contacts/test/unit/mock_main_navigation.js');
 requireApp('communications/contacts/test/unit/mock_contacts.js');
-require('/shared/test/unit/mocks/mock_mozContacts.js');
+require('/shared/unit_test_mocks/mock_mozContacts.js');
 requireApp('communications/contacts/test/unit/mock_external_services.js');
 requireApp('communications/contacts/test/unit/mock_fb.js');
 requireApp('communications/contacts/test/unit/mock_contacts_search.js');
 requireApp('communications/contacts/test/unit/mock_confirm_dialog.js');
 requireApp('communications/contacts/test/unit/mock_image_thumbnail.js');
 
-require('/shared/test/unit/mocks/mock_contact_photo_helper.js');
+require('/shared/unit_test_mocks/mock_contact_photo_helper.js');
 
 var subject,
     _,
@@ -799,8 +799,8 @@ suite('Render contact form', function() {
   suite('Generate full contact name', function() {
     setup(function() {
       // Bypass the contacts matcher when saving contact
-      LazyLoader.load(['/shared/js/simple_phone_matcher.js',
-                       '/shared/js/contacts/contacts_matcher.js'], function() {
+      LazyLoader.load(['/shared/simple_phone_matcher/simple_phone_matcher.js',
+                       '/shared/contacts/contacts_matcher/contacts/contacts_matcher.js'], function() {
           Matcher.match = function() {};
       });
     });

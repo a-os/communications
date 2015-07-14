@@ -24,10 +24,10 @@ requireApp('communications/contacts/test/unit/mock_contacts_search.js');
 requireApp('communications/contacts/test/unit/mock_contacts_settings.js');
 requireApp('communications/contacts/test/unit/mock_fb.js');
 requireApp('communications/contacts/test/unit/mock_import_status_data.js');
-require('/shared/test/unit/mocks/mock_mozContacts.js');
+require('/shared/unit_test_mocks/mock_mozContacts.js');
 
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/test/unit/mocks/mock_contact_all_fields.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_contact_all_fields.js');
 
 var mocksForStatusBar = new MocksHelper([
   'ActivityHandler',

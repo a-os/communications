@@ -11,9 +11,9 @@
 /* global MockMozL10n */
 /* global MockURL */
 
-require('/shared/js/lazy_loader.js');
-require('/shared/js/sanitizer.js');
-require('/shared/test/unit/mocks/mock_contact_photo_helper.js');
+require('/shared/lazy_loader/lazy_loader.js');
+require('/shared/sanitizer/sanitizer.js');
+require('/shared/unit_test_mocks/mock_contact_photo_helper.js');
 
 requireApp('communications/contacts/test/unit/' +
                                         'mock_contacts_matching_controller.js');

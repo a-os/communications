@@ -2,8 +2,8 @@
 
 /* globals MockNavigatorDatastore, MockDatastoreObj, ContactsDatastore */
 
-require('/shared/js/contacts/contacts_datastore.js');
-require('/shared/test/unit/mocks/mock_navigator_datastore.js');
+require('/shared/contacts/contacts_datastore/contacts/contacts_datastore.js');
+require('/shared/unit_test_mocks/mock_navigator_datastore.js');
 
 suite('Contacts Datastore', function() {
   var realDatastore;

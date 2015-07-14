@@ -149,8 +149,8 @@ var ActivityHandler = {
         activity.source.data.blob) {
       LazyLoader.load([
         document.querySelector('#loading-overlay'),
-        '/shared/js/contacts/import/utilities/import_from_vcard.js',
-        '/shared/js/contacts/import/utilities/overlay.js'
+        '/shared/contacts/import/utilities/import_from_vcard/contacts/import/utilities/import_from_vcard.js',
+        '/shared/contacts/import/utilities/overlay/contacts/import/utilities/overlay.js'
       ], function loaded() {
         Contacts.loadFacebook(function() {
           utils.importFromVcard(activity.source.data.blob,
@@ -197,9 +197,9 @@ var ActivityHandler = {
       // (ex: the Facebook guards) experience a consistent MIME type.
       this._currentActivity.source.data.type = 'text/vcard';
       LazyLoader.load([
-                       '/shared/js/text_normalizer.js',
-                       '/shared/js/contact2vcard.js',
-                       '/shared/js/setImmediate.js'
+                       '/shared/text_normalizer/text_normalizer.js',
+                       '/shared/contact2vcard/contact2vcard.js',
+                       '/shared/setImmediate/setImmediate.js'
                       ], function lvcard() {
         ContactToVcardBlob([theContact], function blobReady(vcardBlob) {
           self.postPickSuccess({

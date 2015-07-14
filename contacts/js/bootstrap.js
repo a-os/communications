@@ -13,7 +13,7 @@
     var dependencies = [
      '/contacts/services/contacts.js',
      '/contacts/js/activities.js',
-     '/shared/js/contacts/utilities/event_listeners.js',
+     '/shared/contacts/utilities/event_listeners/contacts/utilities/event_listeners.js',
      '/contacts/js/navigation.js',
      '/contacts/js/main_navigation.js',
      '/contacts/js/views/list.js'
@@ -25,16 +25,16 @@
     // Otherwise, we load the l10n scripts along with the rest of the JS
     // scripts. This will avoid the non localized text to appear in the screen.
     if (!Cache.active) {
-      dependencies.push('/shared/js/l10n.js');
-      dependencies.push('/shared/js/l10n_date.js');
+      dependencies.push('/shared/l10n/l10n.js');
+      dependencies.push('/shared/l10n_date/l10n_date.js');
     }
 
     LazyLoader.load(dependencies, () => {
-      ['/shared/js/async_storage.js',
-       '/shared/js/contacts/import/utilities/config.js',
+      ['/shared/async_storage/async_storage.js',
+       '/shared/contacts/import/utilities/config/contacts/import/utilities/config.js',
        '/contacts/js/utilities/extract_params.js',
        '/contacts/js/utilities/cookie.js',
-       '/shared/js/contact_photo_helper.js'].forEach((src) => {
+       '/shared/contact_photo_helper/contact_photo_helper.js'].forEach((src) => {
         var scriptNode = document.createElement('script');
         scriptNode.src = src;
         scriptNode.setAttribute('defer', true);

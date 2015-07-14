@@ -1,10 +1,10 @@
 /* globals fb */
 'use strict';
 
-importScripts('/shared/js/fb/fb_request.js',
-              '/shared/js/contacts/import/facebook/fb_query.js',
-              '/shared/js/contacts/import/facebook/fb_contact_utils.js',
-              '/shared/js/fb/fb_reader_utils.js',
+importScripts('/shared/fb/fb_request/fb/fb_request.js',
+              '/shared/contacts/import/facebook/fb_query/contacts/import/facebook/fb_query.js',
+              '/shared/contacts/import/facebook/fb_contact_utils/contacts/import/facebook/fb_contact_utils.js',
+              '/shared/fb/fb_reader_utils/fb/fb_reader_utils.js',
               'console.js');
 
 (function(wutils) {

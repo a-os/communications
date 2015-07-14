@@ -11,12 +11,12 @@
 requireApp('communications/contacts/services/contacts.js');
 requireApp('communications/contacts/test/unit/mock_navigation.js');
 requireApp('communications/contacts/test/unit/mock_contacts.js');
-require('/shared/test/unit/mocks/mock_mozContacts.js');
+require('/shared/unit_test_mocks/mock_mozContacts.js');
 requireApp('communications/contacts/test/unit/mock_export_strategy.js');
 requireApp('communications/contacts/test/unit/mock_contacts_list.js');
 requireApp('communications/contacts/test/unit/mock_l10n.js');
-require('/shared/test/unit/mocks/mock_confirm_dialog.js');
-require('/shared/js/fb/fb_reader_utils.js');
+require('/shared/unit_test_mocks/mock_confirm_dialog.js');
+require('/shared/fb/fb_reader_utils/fb/fb_reader_utils.js');
 
 requireApp('communications/contacts/js/export/contacts_exporter.js');
 

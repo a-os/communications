@@ -5,12 +5,12 @@
 /* global MockPhoneNumberService */
 /* global SimplePhoneMatcher */
 
-require('/shared/js/lazy_loader.js');
-require('/shared/js/simple_phone_matcher.js');
-require('/shared/js/fb/fb_request.js');
-require('/shared/js/contacts/import/facebook/fb_data.js');
-require('/shared/test/unit/mocks/mock_navigator_datastore.js');
-require('/shared/test/unit/mocks/mock_moz_phone_number_service.js');
+require('/shared/lazy_loader/lazy_loader.js');
+require('/shared/simple_phone_matcher/simple_phone_matcher.js');
+require('/shared/fb/fb_request/fb/fb_request.js');
+require('/shared/contacts/import/facebook/fb_data/contacts/import/facebook/fb_data.js');
+require('/shared/unit_test_mocks/mock_navigator_datastore.js');
+require('/shared/unit_test_mocks/mock_moz_phone_number_service.js');
 
 var realDatastore, realPhoneNumberService;
 

@@ -35,14 +35,14 @@ function onLoadDialer() {
     CallHandler.init();
     navigator.mozL10n.once(function loadLazyFilesSet() {
       LazyLoader.load([
-        '/shared/js/fb/fb_request.js',
-        '/shared/js/fb/fb_data_reader.js',
-        '/shared/js/fb/fb_reader_utils.js',
-        '/shared/style/confirm.css',
-        '/shared/js/confirm.js',
-        '/shared/elements/config.js',
-        '/shared/elements/gaia-header/dist/gaia-header.js',
-        '/shared/style/edit_mode.css'
+        '/shared/fb/fb_request/fb/fb_request.js',
+        '/shared/fb/fb_data_reader/fb/fb_data_reader.js',
+        '/shared/fb/fb_reader_utils/fb/fb_reader_utils.js',
+        '/shared/confirm/confirm.css',
+        '/shared/confirm/confirm.js',
+        '/shared/config.js',
+        '/shared/gaia-header/dist/gaia-header.js',
+        '/shared/edit_mode/edit_mode.css'
       ], function fileSetLoaded() {
         window.performance.mark('fullyLoaded');
       });

@@ -190,7 +190,7 @@ contacts.Settings = (function() {
     LazyLoader.load([
       '/contacts/js/utilities/ice_data.js',
       '/contacts/js/views/ice_settings.js',
-      '/shared/js/contacts/utilities/ice_store.js'], function(){
+      '/shared/contacts/utilities/ice_store/contacts/utilities/ice_store.js'], function(){
       contacts.ICE.refresh();
       navigationHandler.go('ice-settings', 'right-left');
       if (typeof cb === 'function') {
@@ -269,10 +269,10 @@ contacts.Settings = (function() {
       case 'sd':
         LazyLoader.load(
           [
-            '/shared/js/device_storage/get_storage_if_available.js',
-            '/shared/js/device_storage/get_unused_filename.js',
-            '/shared/js/contact2vcard.js',
-            '/shared/js/setImmediate.js',
+            '/shared/device_storage/get_storage_if_available/device_storage/get_storage_if_available.js',
+            '/shared/device_storage/get_unused_filename/device_storage/get_unused_filename.js',
+            '/shared/contact2vcard/contact2vcard.js',
+            '/shared/setImmediate/setImmediate.js',
             '/contacts/js/export/sd.js'
           ],
           function() {
@@ -283,10 +283,10 @@ contacts.Settings = (function() {
       case 'bluetooth':
         LazyLoader.load(
           [
-            '/shared/js/device_storage/get_storage_if_available.js',
-            '/shared/js/device_storage/get_unused_filename.js',
-            '/shared/js/contact2vcard.js',
-            '/shared/js/setImmediate.js',
+            '/shared/device_storage/get_storage_if_available/device_storage/get_storage_if_available.js',
+            '/shared/device_storage/get_unused_filename/device_storage/get_unused_filename.js',
+            '/shared/contact2vcard/contact2vcard.js',
+            '/shared/setImmediate/setImmediate.js',
             '/contacts/js/export/bt.js'
           ],
           function() {
@@ -740,7 +740,7 @@ contacts.Settings = (function() {
       return;
     }
 
-    LazyLoader.load(['/shared/js/contacts/utilities/http_rest.js'],
+    LazyLoader.load(['/shared/contacts/utilities/http_rest/contacts/utilities/http_rest.js'],
     function() {
       window.asyncStorage.getItem(PENDING_LOGOUT_KEY, function(data) {
         if (!data) {

@@ -3,9 +3,9 @@
 /* global MockFindMatcher */
 /* global Matcher */
 
-require('/shared/js/text_normalizer.js');
-require('/shared/js/simple_phone_matcher.js');
-require('/shared/js/contacts/contacts_matcher.js');
+require('/shared/text_normalizer/text_normalizer.js');
+require('/shared/simple_phone_matcher/simple_phone_matcher.js');
+require('/shared/contacts/contacts_matcher/contacts/contacts_matcher.js');
 requireApp('communications/contacts/test/unit/mock_find_matcher.js');
 
 

@@ -3,7 +3,7 @@
 'use strict';
 
 requireApp('communications/contacts/test/unit/mock_contacts_list.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
 requireApp('communications/contacts/test/unit/mock_multiple_select_dom.js');
 requireApp('communications/contacts/test/unit/mock_contacts_match.js');
 requireApp('communications/contacts/test/unit/mock_vcard_reader.js');

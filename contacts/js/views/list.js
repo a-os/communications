@@ -695,7 +695,7 @@ contacts.List = (function() {
 
   function loadVisibilityMonitor() {
     return new Promise((resolve) => {
-      LazyLoader.load('/shared/js/tag_visibility_monitor.js', () => {
+      LazyLoader.load('/shared/tag_visibility_monitor/tag_visibility_monitor.js', () => {
         var scrollMargin = ~~(getViewHeight() * 1.5);
         // NOTE: Making scrollDelta too large will cause janky scrolling
         //       due to bursts of onscreen() calls from the monitor.
@@ -873,7 +873,7 @@ contacts.List = (function() {
     LazyLoader.load([
      '/contacts/js/fb/fb_init.js',
      '/contacts/js/fb_loader.js',
-     '/shared/js/contacts/utilities/image_loader.js'
+     '/shared/contacts/utilities/image_loader/contacts/utilities/image_loader.js'
     ], () => {
       fb.init(function contacts_init() {
         if (fb.isEnabled) {
@@ -904,7 +904,7 @@ contacts.List = (function() {
     return new Promise((resolve, reject) => {
       LazyLoader.load([
         '/contacts/js/utilities/ice_data.js',
-        '/shared/js/contacts/utilities/ice_store.js'],
+        '/shared/contacts/utilities/ice_store/contacts/utilities/ice_store.js'],
        function() {
         ICEStore.getContacts().then((ids) => {
           ICELoaded = true;
@@ -1002,7 +1002,7 @@ contacts.List = (function() {
 
   function onICEGroupClicked() {
     loadICE().then(() => {
-      LazyLoader.load('/shared/js/contacts/utilities/image_loader.js', () => {
+      LazyLoader.load('/shared/contacts/utilities/image_loader/contacts/utilities/image_loader.js', () => {
         Contacts.view('Ice', function() {
           // Prebuild the rows here, we have all the data to
           // build them. Current amount of rows is 2.
@@ -1026,7 +1026,7 @@ contacts.List = (function() {
   };
 
   var lazyLoadImages = function lazyLoadImages() {
-    LazyLoader.load(['/shared/js/contacts/utilities/image_loader.js',
+    LazyLoader.load(['/shared/contacts/utilities/image_loader/contacts/utilities/image_loader.js',
                      '/contacts/js/fb_resolver.js'], function() {
       if (!imgLoader) {
         imgLoader = new ImageLoader('#groups-container',

@@ -11,7 +11,7 @@ var TelephonyHelper = (function() {
   var confirmLoaded = false;
 
   var loadTelephonyMessages = function(callback) {
-    LazyLoader.load(['/shared/js/dialer/telephony_messages.js'], callback);
+    LazyLoader.load(['/shared/dialer/telephony_messages/dialer/telephony_messages.js'], callback);
   };
 
   var call = function t_call(number, cardIndex, oncall, onconnected,
@@ -96,7 +96,7 @@ var TelephonyHelper = (function() {
       return;
     }
 
-    LazyLoader.load('/shared/js/icc_helper.js', function() {
+    LazyLoader.load('/shared/icc_helper/icc_helper.js', function() {
       var cardState = IccHelper.cardState;
       var emergencyOnly = conn.voice.emergencyCallsOnly;
       var hasCard = (conn.iccId !== null);
@@ -210,7 +210,7 @@ var TelephonyHelper = (function() {
 
     var confMsg = document.getElementById('confirmation-message');
 
-    LazyLoader.load(['/shared/js/confirm.js', confMsg], function() {
+    LazyLoader.load(['/shared/confirm/confirm.js', confMsg], function() {
       confirmLoaded = true;
       cb();
     });

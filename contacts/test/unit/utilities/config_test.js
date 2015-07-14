@@ -2,7 +2,7 @@
 
 'use strict';
 
-require('/shared/js/contacts/import/utilities/config.js');
+require('/shared/contacts/import/utilities/config/contacts/import/utilities/config.js');
 
 suite('> Config Utilities', function() {
   var subject, xhr;

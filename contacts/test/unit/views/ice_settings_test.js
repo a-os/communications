@@ -18,8 +18,8 @@ requireApp('communications/contacts/js/utilities/ice_data.js');
 requireApp('communications/contacts/js/views/ice_settings.js');
 requireApp('communications/contacts/test/unit/mock_contacts_list_obj.js');
 requireApp('communications/contacts/test/unit/mock_contacts_settings.js');
-require('/shared/test/unit/mocks/mock_confirm_dialog.js');
-require('/shared/test/unit/mocks/mock_ice_store.js');
+require('/shared/unit_test_mocks/mock_confirm_dialog.js');
+require('/shared/unit_test_mocks/mock_ice_store.js');
 
 var mocksHelper = new MocksHelper([
   'asyncStorage',

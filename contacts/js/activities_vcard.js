@@ -4,7 +4,7 @@
 
 var VcardActivityHandler = (function() {
   var handle = function(activity, parentHandler) {
-    const DEPENDENCIES = '/shared/js/contacts/import/utilities/vcard_reader.js';
+    const DEPENDENCIES = '/shared/contacts/import/utilities/vcard_reader/contacts/import/utilities/vcard_reader.js';
     LazyLoader.load(DEPENDENCIES, function () {
       getvCardReader(activity.source.data.blob).then(readvCard, (err) => {
         console.error('Error while getting vCard reader:', err);

@@ -62,9 +62,9 @@ if (!contacts.MatchingController) {
         abort();
       };
 
-      var matcherDependencies = ['/shared/js/text_normalizer.js',
-                                 '/shared/js/simple_phone_matcher.js',
-                                 '/shared/js/contacts/contacts_matcher.js'];
+      var matcherDependencies = ['/shared/text_normalizer/text_normalizer.js',
+                                 '/shared/simple_phone_matcher/simple_phone_matcher.js',
+                                 '/shared/contacts/contacts_matcher/contacts/contacts_matcher.js'];
       LazyLoader.load(matcherDependencies, function loaded() {
         parent.ContactsService.get(cid, function success(mContact) {
           // Master contact
@@ -129,7 +129,7 @@ if (!contacts.MatchingController) {
     function showUI(results) {
       matchings = results;
       LazyLoader.load(['/contacts/js/contacts_matching_ui.js',
-                       '/shared/js/contact_photo_helper.js'],
+                       '/shared/contact_photo_helper/contact_photo_helper.js'],
                         function done() {
         contacts.MatchingUI.load(type, contact, results, function() {
           // We start the open-animation when the UI is ready

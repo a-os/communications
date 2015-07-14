@@ -71,7 +71,7 @@ var DeferredActions = (function() {
 
     LazyLoader.load([
       '/facebook/js/fb_sync.js',
-      '/shared/js/contacts/import/import_status_data.js'
+      '/shared/contacts/import/import_status_data/contacts/import/import_status_data.js'
     ], performFbSync);
   }
 

@@ -2,7 +2,7 @@
 /* global MockImportStatusData, Mockfb, MockContacts, MockNavigationStack,
    MockCookie, DeferredActions, fb */
 
-require('/shared/js/lazy_loader.js');
+require('/shared/lazy_loader/lazy_loader.js');
 requireApp('communications/contacts/test/unit/mock_import_status_data.js');
 requireApp('communications/contacts/test/unit/mock_navigation.js');
 requireApp('communications/contacts/test/unit/mock_contacts_list_obj.js');

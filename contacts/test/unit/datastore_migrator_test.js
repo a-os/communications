@@ -7,7 +7,7 @@
 
 requireApp('communications/contacts/test/unit/mock_fb_data.js');
 requireApp('communications/contacts/test/unit/mock_contacts_list_obj.js');
-require('/shared/test/unit/mocks/mock_indexedDB.js');
+require('/shared/unit_test_mocks/mock_indexedDB.js');
 requireApp('communications/contacts/test/unit/mock_cookie.js');
 requireApp('communications/contacts/js/fb/datastore_migrator.js');
 

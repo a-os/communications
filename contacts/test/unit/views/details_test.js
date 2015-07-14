@@ -29,16 +29,16 @@ requireApp('communications/contacts/test/unit/mock_details_dom.js.html');
 requireApp(
   'communications/contacts/test/unit/webrtc-client/mock_webrtc_client.js');
 
-require('/shared/js/text_normalizer.js');
-require('/shared/js/contacts/import/utilities/misc.js');
-require('/shared/js/contacts/utilities/dom.js');
-require('/shared/js/contacts/utilities/templates.js');
+require('/shared/text_normalizer/text_normalizer.js');
+require('/shared/contacts/import/utilities/misc/contacts/import/utilities/misc.js');
+require('/shared/contacts/utilities/dom/contacts/utilities/dom.js');
+require('/shared/contacts/utilities/templates/contacts/utilities/templates.js');
 requireApp('communications/contacts/test/unit/mock_event_listeners.js');
-require('/shared/test/unit/mocks/mock_contact_all_fields.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/test/unit/mocks/contacts/mock_contacts_buttons.js');
+require('/shared/unit_test_mocks/mock_contact_all_fields.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/contacts/mock_contacts_buttons.js');
 
-require('/shared/test/unit/mocks/mock_mozContacts.js');
+require('/shared/unit_test_mocks/mock_mozContacts.js');
 requireApp('communications/contacts/js/views/details.js');
 requireApp('communications/contacts/test/unit/mock_cache.js');
 requireApp('communications/contacts/test/unit/mock_navigation.js');
@@ -52,9 +52,9 @@ requireApp('communications/contacts/test/unit/helper.js');
 requireApp('communications/contacts/js/utilities/mozContact.js');
 requireApp('communications/contacts/js/utilities/extract_params.js');
 
-require('/shared/test/unit/mocks/mock_contact_photo_helper.js');
+require('/shared/unit_test_mocks/mock_contact_photo_helper.js');
 
-require('/shared/test/unit/mocks/mock_moz_contact.js');
+require('/shared/unit_test_mocks/mock_moz_contact.js');
 
 var _ = function(key) { return key; },
     subject,

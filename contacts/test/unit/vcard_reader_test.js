@@ -3,9 +3,9 @@
 
 'use strict';
 
-require('/shared/js/mime_mapper.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/js/contacts/import/utilities/vcard_reader.js');
+require('/shared/mime_mapper/mime_mapper.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/contacts/import/utilities/vcard_reader/contacts/import/utilities/vcard_reader.js');
 
 requireApp('communications/contacts/test/unit/mock_utils.js');
 requireApp('communications/contacts/test/unit/import/mock_rest.js');

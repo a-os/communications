@@ -2,14 +2,14 @@
 
 'use strict';
 
-require('/shared/js/simple_phone_matcher.js');
-require('/shared/js/contacts/import/utilities/misc.js');
-require('/shared/js/contacts/contacts_merger.js');
+require('/shared/simple_phone_matcher/simple_phone_matcher.js');
+require('/shared/contacts/import/utilities/misc/contacts/import/utilities/misc.js');
+require('/shared/contacts/contacts_merger/contacts/contacts_merger.js');
 
 requireApp('communications/contacts/test/unit/mock_find_matcher.js');
 requireApp('communications/contacts/test/unit/mock_image_thumbnail.js');
-require('/shared/test/unit/mocks/mock_contact_photo_helper.js');
-require('/shared/test/unit/mocks/mock_moz_contact.js');
+require('/shared/unit_test_mocks/mock_contact_photo_helper.js');
+require('/shared/unit_test_mocks/mock_moz_contact.js');
 
 
 var mocksHelperForContactsMerger = new MocksHelper([

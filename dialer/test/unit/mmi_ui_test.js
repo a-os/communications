@@ -4,8 +4,8 @@
 
 require('/dialer/js/mmi_ui.js');
 
-require('/shared/test/unit/mocks/mock_l10n.js');
-require('/shared/test/unit/mocks/mock_navigator_moz_apps.js');
+require('/shared/unit_test_mocks/mock_l10n.js');
+require('/shared/unit_test_mocks/mock_navigator_moz_apps.js');
 
 suite('dialer/mmi UI', function() {
   var realMozApps;

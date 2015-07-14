@@ -6,13 +6,13 @@
 
 require('/dialer/test/unit/mock_call_log.js');
 require('/dialer/test/unit/mock_call_log_db_manager.js');
-require('/shared/test/unit/mocks/mock_l10n.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
-require('/shared/test/unit/mocks/mock_moz_activity.js');
-require('/shared/test/unit/mocks/dialer/mock_utils.js');
-require('/shared/test/unit/mocks/dialer/mock_contacts.js');
-require('/shared/test/unit/mocks/contacts/mock_contacts_buttons.js');
-require('/shared/test/unit/mocks/mock_simple_phone_matcher.js');
+require('/shared/unit_test_mocks/mock_l10n.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/mock_moz_activity.js');
+require('/shared/unit_test_mocks/dialer/mock_utils.js');
+require('/shared/unit_test_mocks/dialer/mock_contacts.js');
+require('/shared/unit_test_mocks/contacts/mock_contacts_buttons.js');
+require('/shared/unit_test_mocks/mock_simple_phone_matcher.js');
 
 require('/dialer/js/call_info.js');
 
@@ -124,9 +124,9 @@ suite('Call Info', function(argument) {
 
     test('lazy-loads styles', function() {
       assert.include(LazyLoader.load.args[0][0],
-                     '/shared/style/contacts/contacts_buttons.css');
+                     '/shared/contacts/contacts_buttons/contacts/contacts_buttons.css');
       assert.include(LazyLoader.load.args[0][0],
-                     '/shared/style/contacts.css');
+                     '/shared/contacts/contacts.css');
       assert.include(LazyLoader.load.args[0][0],
                      '/dialer/style/buttons.css');
     });

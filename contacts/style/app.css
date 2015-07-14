@@ -250,7 +250,7 @@ html[dir="ltr"] [data-type="list"] li aside.pack-end {
   margin-right: 2rem;
 }
 
-/* Selection tag extended from shared/style/buttons.css */
+/* Selection tag extended from shared/buttons/buttons.css */
 .view-select-tag .selection-list li button {
   background-color: #fff;
 }

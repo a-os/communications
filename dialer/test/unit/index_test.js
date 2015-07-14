@@ -2,9 +2,9 @@
 
 'use strict';
 
-require('/shared/test/unit/mocks/dialer/mock_keypad.js');
-require('/shared/test/unit/mocks/mock_l10n.js');
-require('/shared/test/unit/mocks/mock_lazy_loader.js');
+require('/shared/unit_test_mocks/dialer/mock_keypad.js');
+require('/shared/unit_test_mocks/mock_l10n.js');
+require('/shared/unit_test_mocks/mock_lazy_loader.js');
 require('/dialer/test/unit/mock_call_handler.js');
 require('/dialer/test/unit/mock_navbar_manager.js');
 

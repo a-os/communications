@@ -4,7 +4,7 @@
 
 requireApp('communications/contacts/services/contacts.js');
 requireApp('communications/contacts/js/export/sim.js');
-require('/shared/test/unit/mocks/mock_mozContacts.js');
+require('/shared/unit_test_mocks/mock_mozContacts.js');
 
 suite('Sim export', function() {
   var realMozContacts = null;

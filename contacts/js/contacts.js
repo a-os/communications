@@ -440,7 +440,7 @@ var Contacts = (function() {
       initDetails(function onDetails() {
         LazyLoader.load([
           SHARED_UTILS_PATH + '/misc.js',
-          '/shared/js/contacts/utilities/image_thumbnail.js',
+          '/shared/contacts/utilities/image_thumbnail/contacts/utilities/image_thumbnail.js',
           '/contacts/js/match_service.js'],
         function() {
           Contacts.view('Form', function viewLoaded() {
@@ -462,11 +462,11 @@ var Contacts = (function() {
         LazyLoader.load(['/contacts/js/utilities/sim_dom_generator.js',
           '/contacts/js/utilities/normalizer.js',
           SHARED_UTILS_PATH + '/misc.js',
-          '/shared/js/mime_mapper.js',
+          '/shared/mime_mapper/mime_mapper.js',
           SHARED_UTILS_PATH + '/vcard_parser.js',
           '/contacts/js/utilities/icc_handler.js',
           SHARED_UTILS_PATH + '/sdcard.js',
-          '/shared/js/date_time_helper.js'], function() {
+          '/shared/date_time_helper/date_time_helper.js'], function() {
           settingsReady = true;
           contacts.Settings.init();
           callback();
@@ -483,8 +483,8 @@ var Contacts = (function() {
         LazyLoader.load(
           [SHARED_UTILS_PATH + '/misc.js',
            '/dialer/js/telephony_helper.js',
-           '/shared/js/contacts/sms_integration.js',
-           '/shared/js/contacts/contacts_buttons.js',
+           '/shared/contacts/sms_integration/contacts/sms_integration.js',
+           '/shared/contacts/contacts_buttons/contacts/contacts_buttons.js',
            '/contacts/js/match_service.js'],
         function() {
           detailsReady = true;
@@ -618,14 +618,14 @@ var Contacts = (function() {
   var addAsyncScripts = function addAsyncScripts() {
 
     var lazyLoadFiles = [
-      '/shared/js/contacts/utilities/templates.js',
-      '/shared/js/contacts/contacts_shortcuts.js',
+      '/shared/contacts/utilities/templates/contacts/utilities/templates.js',
+      '/shared/contacts/contacts_shortcuts/contacts/contacts_shortcuts.js',
       '/contacts/js/contacts_tag.js',
       '/contacts/js/tag_options.js',
-      '/shared/js/text_normalizer.js',
+      '/shared/text_normalizer/text_normalizer.js',
       SHARED_UTILS_PATH + '/status.js',
-      '/shared/js/contacts/utilities/dom.js',
-      '/shared/js/confirm.js',
+      '/shared/contacts/utilities/dom/contacts/utilities/dom.js',
+      '/shared/confirm/confirm.js',
       document.getElementById('confirmation-message')
     ];
 
@@ -780,14 +780,14 @@ var Contacts = (function() {
     });
   };
 
-  LazyLoader.load('/shared/js/l10n.js', () => {
+  LazyLoader.load('/shared/l10n/l10n.js', () => {
     navigator.mozL10n.once(() => {
       initContacts();
     });
     navigator.mozL10n.ready(() => {
       Cache.maybeEvict();
     });
-    LazyLoader.load('/shared/js/l10n_date.js');
+    LazyLoader.load('/shared/l10n_date/l10n_date.js');
   });
 
   /**

@@ -3,5 +3,5 @@
   "json"      : "bower.json",
   "searchpath"  : "",
   "shorthand_resolver" : "",
-  "interactive": false
+  "interactive": true
 }

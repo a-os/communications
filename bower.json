@@ -65,6 +65,7 @@
     "tag_visibility_monitor": "git@github.com:alivedise/tag_visibility_monitor.git#~0.0.1",
     "telephony": "git@github.com:alivedise/telephony.git",
     "text_normalizer": "git@github.com:alivedise/text_normalizer.git#~0.0.1",
-    "utilities": "git@github.com:alivedise/utilities.git#~0.0.1"
+    "utilities": "git@github.com:alivedise/utilities.git#~0.0.1",
+    "keypad": "git@github.com:alivedise/keypad.git#~0.0.1"
   }
 }

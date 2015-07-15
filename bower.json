@@ -66,6 +66,7 @@
     "telephony": "git@github.com:alivedise/telephony.git",
     "text_normalizer": "git@github.com:alivedise/text_normalizer.git#~0.0.1",
     "utilities": "git@github.com:alivedise/utilities.git#~0.0.1",
-    "keypad": "git@github.com:alivedise/keypad.git#~0.0.1"
+    "keypad": "git@github.com:alivedise/keypad.git#~0.0.1",
+    "phone_types": "git@github.com:alivedise/phone_types.git#~0.0.1"
   }
 }

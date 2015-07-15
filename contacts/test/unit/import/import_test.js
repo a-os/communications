@@ -474,7 +474,7 @@ suite('HTML format', function() {
   test('Contact name is tagged with the right class', function() {
     function loadImportHTML() {
       var req = new XMLHttpRequest();
-      req.open('GET', '/shared/pages/import/import.html', false);
+      req.open('GET', '/shared/import_contacts/import.html', false);
       req.send(null);
       return req.responseText;
     }

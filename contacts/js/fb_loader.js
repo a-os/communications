@@ -16,7 +16,7 @@ var fbLoader = (function() {
 
     var curtain = document.createElement('iframe');
     curtain.id = 'fb-curtain';
-    curtain.src = '/shared/pages/import/curtain.html';
+    curtain.src = '/shared/import_contacts/curtain.html';
     iframesFragment.appendChild(curtain);
 
     var oauth = document.createElement('iframe');
@@ -34,7 +34,7 @@ var fbLoader = (function() {
       '/shared/contacts/import/utilities/misc/contacts/import/utilities/misc.js',
       '/shared/contacts/import/import_status_data/contacts/import/import_status_data.js',
       '/contacts/js/service_extensions.js',
-      '/shared/pages/import/js/parameters.js',
+      '/shared/import_contacts/js/parameters.js',
       '/shared/fb/fb_request/fb/fb_request.js',
       '/shared/contacts/import/facebook/fb_data/contacts/import/facebook/fb_data.js',
       '/shared/contacts/import/facebook/fb_utils/contacts/import/facebook/fb_utils.js',

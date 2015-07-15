@@ -10,7 +10,7 @@
 
   var extensionFrame = document.querySelector('#fb-extensions');
   var oauthFrame = document.querySelector('#fb-oauth');
-  oauthFrame.src = '/shared/pages/import/oauth.html';
+  oauthFrame.src = '/shared/import_contacts/oauth.html';
   var currentURI, access_token;
   var canClose = true, canCloseLogout = true;
   var closeRequested = false;
@@ -43,7 +43,7 @@
     closeRequested = false;
     canClose = false;
     canCloseLogout = false;
-    load('/shared/pages/import/import.html?service=' + serviceName,
+    load('/shared/import_contacts/import.html?service=' + serviceName,
          'friends', serviceName);
   }
 

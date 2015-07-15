@@ -2,7 +2,7 @@
 
 /* global Redirect */
 
-require('/shared/pages/import/redirects/redirect.js');
+require('/shared/import_contacts/redirects/redirect.js');
 
 
 suite('OAuth redirect', function() {

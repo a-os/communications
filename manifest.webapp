@@ -156,15 +156,15 @@
 
   "redirects": [
     {"from": "facebook",
-    "to": "/shared/pages/import/redirects/redirect.html"},
+    "to": "/shared/import_contacts/redirects/redirect.html"},
     {"from": "facebook_dialogs",
-    "to": "/shared/pages/import/redirects/dialogs_end.html"},
+    "to": "/shared/import_contacts/redirects/dialogs_end.html"},
     {"from": "facebook_logout",
-    "to": "/shared/pages/import/redirects/dialogs_end.html"},
+    "to": "/shared/import_contacts/redirects/dialogs_end.html"},
     {"from": "live",
-    "to": "/shared/pages/import/redirects/redirect.html"},
+    "to": "/shared/import_contacts/redirects/redirect.html"},
     {"from": "gmail",
-    "to": "/shared/pages/import/redirects/redirect.html"}
+    "to": "/shared/import_contacts/redirects/redirect.html"}
   ],
 
   "datastores-owned": {

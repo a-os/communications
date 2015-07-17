@@ -30,6 +30,7 @@
     "device_storage": "git@github.com:alivedise/device_storage.git#~0.0.1",
     "dialer": "git@github.com:alivedise/dialer.git#~0.0.1",
     "edit_mode": "git@github.com:alivedise/edit_mode.git#~0.0.1",
+    "facebook": "git@github.com:alivedise/facebook.git#~0.0.1",
     "fb": "git@github.com:alivedise/fb.git#~0.0.1",
     "font_size_utils": "git@github.com:alivedise/font_size_utils.git#~0.0.1",
     "gaia-header": "git@github.com:alivedise/gaia-header.git#~0.0.1",
